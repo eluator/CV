@@ -1,9 +1,21 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{article}   % was 12pt
+
+\usepackage[margin=0.7in]{geometry}   % was 0.7in
+\usepackage{enumitem}
+
+\linespread{0.95}   % was 0.95
+
+\setlist[itemize]{
+    leftmargin=1.2em,
+    itemsep=1pt,
+    topsep=2pt,
+    parsep=0pt,
+    partopsep=0pt
+}
 
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[russian,english]{babel}
-\usepackage[margin=0.7in]{geometry}  % Немного уменьшили поля
 \pagestyle{empty}
 \usepackage{hyperref}
 \usepackage{color}
@@ -20,9 +32,6 @@
     urlcolor=cyan,
 }
 
-% Слегка уменьшили межстрочный интервал:
-\linespread{0.95}
-
 \begin{document}
 \begin{center}
     {\Huge \textbf{Igor Timofeev}}\\[6pt]
@@ -37,17 +46,17 @@
 \href{https://github.com/eluator}{GitHub} \quad | \quad
 \href{https://www.linkedin.com/in/itimofeev}{LinkedIn}
 
-\vspace{1em}
+\vspace{0.4em}
 \hrule
-\vspace{1em}
+\vspace{0.4em}
 
 %================= KNOWLEDGE AND SKILLS =================%
 \noindent \textbf{\Large Knowledge \& Skills}
 \begin{itemize}
-    \item \textbf{Machine Learning:} Classical ML, Deep Learning: VAE, GAN, Diffusion, Transformer, RLHF, LoRa, RAG, etc. Frameworks: PyTorch, TensorFlow, scikit-learn, MLOps: Azure ML, Wandb, Hydra, TensorBoard, DVC.
-    \item \textbf{Programming:} Python, C/C++.
-    \item \textbf{Math Foundations:} Calculus, Linear Algebra, Probability Theory, Statistics, Numerical Analysis, Algorithms \& Data Structures.
-    \item \textbf{Physics:} Statistical Physics, Quantum Mechanics, etc.
+    \item \textbf{Machine Learning:} Classical ML, Deep Learning: VAE, GAN, Transformer, LLMs, RAG. Frameworks: PyTorch, TensorFlow, scikit-learn, openai, nltk, langchain, chromadb, ragas, transformers. MLOps: Wandb, Hydra, TensorBoard, DVC.
+    \item \textbf{Programming:} Python, C/C++: opencv, boost.
+    \item \textbf{Math Foundations:} Calculus, Linear Algebra, Differential Equations, Probability Theory, Statistics, Numerical Analysis, Algorithms \& Data Structures.
+    \item \textbf{Physics:} Statistical Physics, Quantum Mechanics, Mechanics \& Celestial Mechanics.
     \item \textbf{Bio-related:} Bioinformatics basics, differential expression, enrichment, batch effect removal, RNA-seq, Biophysics basics.
     \item \textbf{Data Analysis:} SQL, Hypothesis Testing in R \href{https://github.com/eluator/DataAnalysisInR}{\faGithub}.
 \end{itemize}
@@ -57,6 +66,13 @@
 %================= EMPLOYMENT =================%
 \noindent \textbf{\Large Employment}
 \begin{itemize}
+
+	\item \href{https://www.tungstenautomation.com/}{\textbf{Tungsten Automation}} \hfill \textit{July 2025 - present}
+	\begin{itemize}
+	\item Q\&A with RAG evaluation using two open sourced datasets and artificial data, RAGAS library, LLM-as-judge and claim decomposition.
+	\item Evaluation of grounding text location.
+	\end{itemize}
+	
     \item \href{https://gero.ai/}{\textbf{Gero}} \hfill \textit{May 2022 -- July 2024}
     \begin{itemize}
         \item Developed denoising and batch removal techniques in RNA-seq bulk and single-cell data and built embeddings of cellular perturbations to evaluate functional similarities.
@@ -112,11 +128,11 @@
     \item \href{https://bioinf.me/education/summer/2019}{\textbf{Bioinformatics Summer School 2019}} \\
           Topic: “Bioinformatics in Research of Aging and Biological Development.” \href{https://docs.google.com/presentation/d/12X9N3eo9C5_c6ys-fudM9NPqtLNOq7waT3EI_VHpk_8/edit?usp=sharing}{\faChalkboardTeacher} \href{https://colab.research.google.com/drive/1oeGpQUsOl7thfNZp0QWXT5PVvh8-RbF8?usp=sharing}{\includegraphics[height=1em]{google-colab-logo.png}}
 
-    \item 4th place in SignalNeuroHack hackathon with Huawei research project. \href{https://github.com/eluator/SignalNeuroHackTasks}{\faGithub}
+    \item 4th place in SignalNeuroHack hackathon with Huawei research project. \href{https://github.com/eluator/SignalNeuroHackTasks}{\faGithub} \href{https://drive.google.com/file/d/1BP5wC8w1eAIRWtIE0tXxjwbI0pZckC2r/view?usp=sharing}{\faChalkboardTeacher}
     \item Completed \href{https://dlcourse.ai}{“Deep Learning на пальцах (Put Simply)”} by Computer Science Center and Novosibirsk State University. \href{https://github.com/eluator/dlcourse_ai}{\faGithub} Reinforcement Learning tasks (DQN, Policy Gradient).  \href{https://github.com/eluator/JetBrainsInternship}{\faGithub}
     \item “Machine Learning and Analysis” Specialization by Yandex on Coursera. \href{https://github.com/eluator/Coursera_ML}{\faGithub}
     \item \href{https://stepik.org/users/19741243/certificates}{Stepik courses certificates}.
-    \item Other lectures and books: Blastim courses, STAT115 Harvard, Molecular Biophysics (Eric Lindahl), \href{https://link.springer.com/book/10.1007/978-3-030-93158-2}{Deep Generative Modeling}, \href{https://www.amazon.com/Algebraic-Statistical-Monographs-Computational-Mathematics/dp/0521864674/ref=sr_1_1?dib=eyJ2IjoiMSJ9.tkLNU_LnXzjo49nLudxBHTXgdSUji9_CDh8zIkf9eCNvsNrFQaIWdoEvn0XHpA2RrMEOWYmMgClofNKBNuugcUyAIhpemShvdfqTQcb8C1dGB0gnYam5WTp_IljQ1qbXZ4_4eejJPBanxVeKXy7XRvZ0QZG5AfHUOfc_w4rJE4_mrQYTHFq40KvTw2OobJbxZwgS0VQ9FOR-hBol-1ol7-zVnsjPFafUT9knUSpWxyI.fIl8H9UcscDCXG7cs5jBfaYT9ZVPPOnZacK73pkM0G4&dib_tag=se&qid=1735428125&refinements=p_27%3ASumio+Watanabe&s=books&sr=1-1}{Watanabe}, \href{https://www.damtp.cam.ac.uk/user/tong/teaching.html}{David Tong lectures}, etc.
+    \item Other lectures and books: Blastim courses, STAT115 Harvard, Molecular Biophysics (Eric Lindahl), \href{https://link.springer.com/book/10.1007/978-3-030-93158-2}{Deep Generative Modeling}, \href{https://www.amazon.com/Algebraic-Statistical-Monographs-Computational-Mathematics/dp/0521864674/ref=sr_1_1?dib=eyJ2IjoiMSJ9.tkLNU_LnXzjo49nLudxBHTXgdSUji9_CDh8zIkf9eCNvsNrFQaIWdoEvn0XHpA2RrMEOWYmMgClofNKBNuugcUyAIhpemShvdfqTQcb8C1dGB0gnYam5WTp_IljQ1qbXZ4_4eejJPBanxVeKXy7XRvZ0QZG5AfHUOfc_w4rJE4_mrQYTHFq40KvTw2OobJbxZwgS0VQ9FOR-hBol-1ol7-zVnsjPFafUT9knUSpWxyI.fIl8H9UcscDCXG7cs5jBfaYT9ZVPPOnZacK73pkM0G4&dib_tag=se&qid=1735428125&refinements=p_27%3ASumio+Watanabe&s=books&sr=1-1}{Watanabe}, \href{https://www.damtp.cam.ac.uk/user/tong/teaching.html}{David Tong lectures}.
     \item \href{https://www.alignmentforum.org/posts/vakhhNHduW9gmENTW/announcing-new-round-of-key-phenomena-in-ai-risk-reading}{Reading Group "Key Phenomena in AI Risk"}, 
           \href{https://www.linkedin.com/posts/effective-altruism-serbia_easerbia-makedifference-effectivealtruism-activity-7046076217321566208-SMq2/}{EA Serbia Introductory Course}.
 \end{itemize}
